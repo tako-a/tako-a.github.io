@@ -1,0 +1,23 @@
+# Change 'comments' to true for Disqus comments
+disqus:
+  comments: true
+  disqus_shortname: 'tanov'
+
+# If you are not using Google Analytics, please change 'google-ID' to an empty string
+# google-ID: 'UA-91332049-1'
+
+menu: 
+  - name: Ноты
+    submenu:
+      - name: Детские
+        link: /notes
+      - name: Симфонии
+        link: /notes
+  - name: Аудиозаписи
+    link: /audio
+  - name: Менги
+    link: /mengi
+  - name: Ссылки
+    link: /links
+  - name: О сайте
+    link: /about
