@@ -1,0 +1,31 @@
+---
+layout: default
+title: Волшебный цветок Саян
+permalink: /balet_sayan
+---
+<p>
+Балет волшебный цветок Саян
+</p>
+
+<div class="container">
+<div class="row">
+    {% for file in site.static_files %}
+        {% if file.path contains 'audio/balet_sayan' %}
+
+            <div class="music-block col-lg-6 col-md-6">
+                    <div>
+                        <div style="float:left;width:70%;">
+                            <strong>{{ file.basename | slice: 3 | upcase }}{{ file.basename | slice: 4, 20 }}</strong>
+                            &nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div>
+                            <a class="label label-success" href="{{ site.baseurl }}{{ file.path }}" download>Скачать</a>
+                        </div>
+                        <div>
+                            <audio style="width:90%;" controls src="{{ site.baseurl }}{{ file.path }}" />
+                        </div>
+                    </div>
+        </div>
+    {% endif %}
+    {% endfor %}
+</div>

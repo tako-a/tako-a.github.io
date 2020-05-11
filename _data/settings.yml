@@ -14,7 +14,11 @@ menu:
       - name: Симфонии
         link: /notes
   - name: Аудиозаписи
-    link: /audio
+    submenu:
+      - name: Балет
+        link: /balet_sayan
+      - name: Постановки
+        link: /postanovky
   - name: Менги
     link: /mengi
   - name: Ссылки
